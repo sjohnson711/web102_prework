@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Cabin";
@@ -28,7 +31,7 @@ body {
 }
 
 .stats-card {
-  background-color: #a8b0bc;
+  background-color: lightblue;
   border-radius: 7px;
   padding: 1%;
   margin: 1%;
@@ -43,9 +46,11 @@ body {
 }
 
 #games-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-items: center;
+  gap: 20px;
 }
 
 .game-img {
@@ -78,4 +83,11 @@ button {
   padding: 1%;
   margin: 1%;
   border-radius: 7px;
+  background-color: lavender;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }

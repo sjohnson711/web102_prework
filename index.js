@@ -88,7 +88,7 @@ let unfunded = GAMES_JSON.reduce((acc, game) => {
 let totalRaised = GAMES_JSON.reduce((acc, game) => acc + game.pledged, 0);
 let totalGames = GAMES_JSON.length;
 
-let description = `A total of ${totalRaised.toLocaleString()} has been raised for ${totalGames} Currently, ${unfunded} game${
+let description = `A total of $${totalRaised.toLocaleString()} has been raised for ${totalGames} Currently, ${unfunded} game${
   unfunded === 1 ? "" : "s"
 }  remain${
   unfunded === 1 ? "" : "s"
